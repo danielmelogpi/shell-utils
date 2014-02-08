@@ -1,22 +1,24 @@
+#!/bin/bash
+# Daniel Melo
+# this thing updates from remove repository, adds modifications to stage,
+# commits it and pushes it to the remote again. Such commands!
 
-bldred=${txtbld}$(tput setaf 1); #  red
 txtbld=$(tput bold);
 txtrst=$(tput sgr0);
-red=${bldred} ;
 reset=${txtrst};
 
-echo "$red > Updating sources...$reset";
+echo "$txtbld> Updating sources...$reset";
 git pull origin master;
 
-echo "$red> Adding all the modifications zed master did $reset";
+echo "$txtbld> Adding all the modifications zed master did $reset";
 git add --all;
 
 
-printf "$red Gibe commit message plox! \t>>\t\t $reset";
+printf "$txtbld> Gibe commit message plox! \t>>\t\t $reset";
 echo "";
 read message;
-echo "";
-echo "Commiting changes";
+
+printf "\n\n$txtbld>Commiting changes... $reset";
 git commit -m "{$message}";
 
 printf "\n\n$red Updating changes to remote origin -> master $reset"
