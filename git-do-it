@@ -7,7 +7,7 @@ txtbld=$(tput bold);
 txtrst=$(tput sgr0);
 reset=${txtrst};
 
-echo "$txtbld> Updating sources...$reset";
+echo "$txtbld> Updating from remote repository...$reset";
 git pull origin master;
 
 printf "\n$txtbld> Adding all the modifications evil master did to stage $reset";
@@ -22,7 +22,7 @@ printf "\nSuch message! Much appreciations!\n...";
 printf "\n\n$txtbld> Commiting changes... $reset";
 git commit -m "$message";
 
-printf "\n$txtbld> Updating changes to remote origin -> master $reset"
+printf "\n$txtbld> Updating changes to remote origin -> master $reset\n"
 git push origin master;
 
 printf "\n$txtbld Me did it! Me are good shell script, master! Gibe moar CPU! $reset";
