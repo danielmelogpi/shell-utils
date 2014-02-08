@@ -19,11 +19,11 @@ read message;
 
 printf "\nSuch message! Much appreciations!\n...";
 
-printf "\n$txtbld>Commiting changes... $reset";
+printf "\n\n$txtbld>Commiting changes... $reset";
 git commit -m "{$message}";
 
 printf "\n$txtbld Updating changes to remote origin -> master $reset"
 git push origin master;
 
-printf "\n\n$txtbld Me did it! Me are good shell script, master! Gibe moar CPU! $reset";
+printf "\n$txtbld Me did it! Me are good shell script, master! Gibe moar CPU! $reset";
 echo "";
