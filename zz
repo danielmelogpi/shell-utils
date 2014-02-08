@@ -1,0 +1,8 @@
+#!/bin/bash
+#esse programa é simplesmente fantástico!
+if [ "$1" = '-h' ]; 
+then
+ printf "\"zz\" é para o preguiçoso que não gosta de digitar 'clear' para limpar o terminal.\n\"zz\" limpa o terminal para você, gordo.\n\n";
+else
+ clear
+fi

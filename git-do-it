@@ -1,0 +1,16 @@
+echo "> Updating sources...";
+git pull origin master;
+echo "";
+echo "> Adding all the modifications zed master did";
+git add --all;
+print "Gibe commit message plox! Type-et \t>>\t\t";
+read message;
+echo ""
+echo "Commiting changes";
+git commit -m "{$message}";
+echo "";
+echo "Updating changes to remote origin->master"
+git push origin master;
+echo "";
+echo "Me did it! Me good shell script, master! Gibe moar CPU!";
+echo "";
