@@ -3,7 +3,7 @@ git pull origin master;
 echo "";
 echo "> Adding all the modifications zed master did";
 git add --all;
-print "Gibe commit message plox! Type-et \t>>\t\t";
+echo "Gibe commit message plox! Type-et \t> >\t\t";
 read message;
 echo ""
 echo "Commiting changes";
