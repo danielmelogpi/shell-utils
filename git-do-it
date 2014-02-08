@@ -1,9 +1,17 @@
+
+bldred=${txtbld}$(tput setaf 1); #  red
+txtrst=$(tput sgr0);
+red=${bldred} ;
+reset = "${txtrst}";
+
+echo "$red";
 echo "> Updating sources...";
+echo "$reset";
 git pull origin master;
 echo "";
 echo "> Adding all the modifications zed master did";
 git add --all;
-echo "Gibe commit message plox! Type-et \t> >\t\t";
+printf "Gibe commit message plox! \t>>\t\t";
 read message;
 echo ""
 echo "Commiting changes";
