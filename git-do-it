@@ -20,7 +20,7 @@ read message;
 printf "\nSuch message! Much appreciations!\n...";
 
 printf "\n\n$txtbld> Commiting changes... $reset";
-git commit -m "{$message}";
+git commit -m "$message";
 
 printf "\n$txtbld> Updating changes to remote origin -> master $reset"
 git push origin master;
