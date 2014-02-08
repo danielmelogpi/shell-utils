@@ -1,24 +1,26 @@
 
 bldred=${txtbld}$(tput setaf 1); #  red
+txtbld=$(tput bold);
 txtrst=$(tput sgr0);
 red=${bldred} ;
-reset = "${txtrst}";
+reset=${txtrst};
 
-echo "$red";
-echo "> Updating sources...";
-echo "$reset";
+echo "$red > Updating sources...$reset";
 git pull origin master;
-echo "";
-echo "> Adding all the modifications zed master did";
+
+echo "$red> Adding all the modifications zed master did $reset";
 git add --all;
-printf "Gibe commit message plox! \t>>\t\t";
+
+
+printf "$red Gibe commit message plox! \t>>\t\t $reset";
+echo "";
 read message;
-echo ""
+echo "";
 echo "Commiting changes";
 git commit -m "{$message}";
-echo "";
-echo "Updating changes to remote origin->master"
+
+printf "\n\n$red Updating changes to remote origin -> master $reset"
 git push origin master;
-echo "";
-echo "Me did it! Me good shell script, master! Gibe moar CPU!";
+
+printf "\n\n$txtbld Me did it! Me are good shell script, master! Gibe moar CPU! $reset";
 echo "";
