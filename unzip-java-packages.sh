@@ -3,6 +3,7 @@
 # para cada pasta resultante, realiza a mesma acao de forma recursiva
 # e apaga o arquivo .war/.jar das pastas internas.
 # os arquivos originais da pasta onde se iniciou o processo sao preservados
+#
 function unzipAll {
   startCwd=`pwd`
   for file in `ls | grep .war`; do
